@@ -1,0 +1,362 @@
+{
+  "resourceType": "CarePlan",
+  "id": "PCP-CarePlan-1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/CarePlan"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>PCP CarePlan for Diabetes</div></div>"
+  },
+  "subject": {
+    "reference": "Patient/CarePlan-Patient-1",
+    "display": "Bob Anyman"
+  },
+  "status": "active",
+  "description": "Manage Type 2 Diabetes",
+  "relatedPlan": [
+    {
+      "code": "includes",
+      "plan": {
+        "reference": "CarePlan/Dietitian-CarePlan-1",
+        "display": "Dietitian Care Plan"
+      }
+    },
+    {
+      "code": "includes",
+      "plan": {
+        "reference": "CarePlan/Podiatry-CarePlan-1",
+        "display": "Podiatry Care Plan"
+      }
+    }
+  ],
+  "goal": [
+    {
+      "reference": "Goal/CarePlan-Goal-1",
+      "display": "Hemoglobin A1c < 7.0%"
+    },
+    {
+      "reference": "Goal/CarePlan-Goal-2",
+      "display": "Glucose < 108 mg/dL"
+    },
+    {
+      "reference": "Goal/CarePlan-Goal-3",
+      "display": "Body weight < 175 lb"
+    },
+    {
+      "reference": "Goal/CarePlan-Goal-4",
+      "display": "Improve and maintain optimal foot health"
+    },
+    {
+      "reference": "Goal/CarePlan-Goal-5",
+      "display": "Maintain blood pressure below 140/90 mmHg"
+    },
+    {
+      "reference": "Goal/CarePlan-Goal-6",
+      "display": "Address patient knowledge deficit on diabetic self-care"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/CarePlan-Condition-1",
+      "display": "Type 2 diabetes mellitus"
+    },
+    {
+      "reference": "Condition/CarePlan-HealthConcern-1",
+      "display": "Inability to maintain effective blood glucose control"
+    },
+    {
+      "reference": "Condition/CarePlan-HealthConcern-2",
+      "display": "Obesity"
+    },
+    {
+      "reference": "Condition/CarePlan-HealthConcern-3",
+      "display": "Peripheral vascular and neuropathy risks leading to heightened foot complication risks"
+    },
+    {
+      "reference": "Condition/CarePlan-HealthConcern-4",
+      "display": "Provisional diagnosis high blood pressure with past history of borderline high blood pressure"
+    },
+    {
+      "reference": "Condition/CarePlan-HealthConcern-5",
+      "display": "Health literacy deficit which may impact self-care willingness and ability to achieve goals"
+    }
+  ],
+  "careTeam": [
+    {
+      "reference": "CareTeam/CarePlan-CareTeam-1"
+    }
+  ],
+  "activity": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Take twice daily"
+        }
+      ],
+      "reference": {
+        "reference": "MedicationRequest/CarePlan-MedicationRequest-1",
+        "display": "Metformin hydrochloride 500 MG Oral Tablet"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Take twice daily"
+        }
+      ],
+      "reference": {
+        "reference": "MedicationRequest/CarePlan-MedicationRequest-2",
+        "display": "Lisinopril 10 MG Oral Tablet"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Take once per day"
+        }
+      ],
+      "reference": {
+        "reference": "MedicationRequest/CarePlan-MedicationRequest-3",
+        "display": "Lipitor 40 MG Oral Tablet"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Schedule a blood test"
+        }
+      ],
+      "reference": {
+        "reference": "DiagnosticRequest/CarePlan-DiagnosticRequest-1",
+        "display": "Hemoglobin A1c in Blood"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Schedule appt with dietitian"
+        }
+      ],
+      "reference": {
+        "reference": "ReferralRequest/CarePlan-ReferralRequest-1",
+        "display": "Referral to dietitian"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Schedule an appt with podiatrist"
+        }
+      ],
+      "reference": {
+        "reference": "ReferralRequest/CarePlan-ReferralRequest-2",
+        "display": "Referral to podiatrist"
+      }
+    },
+    {
+      "detail": {
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/care-plan-activity-category",
+              "code": "observation",
+              "display": "Observation"
+            }
+          ],
+          "text": "Observation"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "description": "Measure your blood pressure every morning with your arm relaxed at your side or on a table.",
+        "status": "in-progress",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "After urinating, before breakfast"
+        }
+      ],
+      "detail": {
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/care-plan-activity-category",
+              "code": "observation",
+              "display": "Observation"
+            }
+          ],
+          "text": "Observation"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ],
+          "text": "Weight"
+        },
+        "description": "It is very important to weight yourself each morning, after going to the bathroom and before breakfast. Increased weight can be a sign that you are retaining fluid and can lead to worsening heart failure.",
+        "status": "in-progress",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 1,
+            "period": 7,
+            "periodUnit": "d"
+          }
+        }
+      }
+    },
+    {
+      "detail": {
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/care-plan-activity-category",
+              "code": "observation",
+              "display": "Observation"
+            }
+          ],
+          "text": "Observation"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14760-3",
+              "display": "Glucose [Moles/​volume] in Capillary blood --2 hours post meal"
+            }
+          ],
+          "text": "Blood sugar level"
+        },
+        "description": "Check your blood sugar level 2 hours after each meal.",
+        "status": "in-progress",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 3,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Walk at a comfortable pace"
+        }
+      ],
+      "detail": {
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/care-plan-activity-category",
+              "code": "procedure",
+              "display": "Procedure"
+            }
+          ],
+          "text": "Observation"
+        },
+        "code": {
+          "text": "Exercise"
+        },
+        "description": "Walk daily at a comfortable pace for as long as you are able. Stop if you develop shortness of breath, chest pain, or palpatations.",
+        "status": "in-progress",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Daily Step Count"
+        }
+      ],
+      "detail": {
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/care-plan-activity-category",
+              "code": "observation",
+              "display": "Observation"
+            }
+          ],
+          "text": "Observation"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "41950-7",
+              "display": "Number of steps in 24 hour Measured"
+            }
+          ],
+          "text": "Steps"
+        },
+        "description": "Record your daily total step count before going to bed each evening.",
+        "status": "in-progress",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    }
+  ]
+}
