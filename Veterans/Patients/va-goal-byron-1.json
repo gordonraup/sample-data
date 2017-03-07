@@ -1,0 +1,35 @@
+{
+  "resourceType": "Goal",
+  "id": "va-goal-byron-1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Goal"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Life goals</div></div>"
+  },
+  "status": "in-progress",
+  "priority": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/goal-priority",
+        "code": "high",
+        "display": "high"
+      }
+    ],
+    "text": "high"
+  },
+  "subject": {
+    "reference": "Patient/va-pat-byron",
+    "display": "Byron"
+  },
+  "author": {
+    "reference": "Practitioner/va-prac-visn6-francis",
+    "display": "Dr. Francis, MD"
+  },
+  "description": {
+    "text": "Byron is in recovery. He spends each day strengthening his health so that he can rekindle his marriage and help other vets."
+  }
+}

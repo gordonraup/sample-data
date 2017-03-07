@@ -1,0 +1,172 @@
+{
+  "resourceType": "CarePlan",
+  "id": "va-plan-meghan-pc",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/CarePlan"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Meghan's primary care plan</div></div>"
+  },
+  "subject": {
+    "reference": "Patient/va-pat-meghan",
+    "display": "Meghan"
+  },
+  "status": "active",
+  "description": "Primary Care",
+  "goal": [
+    {
+      "reference": "Goal/va-goal-meghan-1",
+      "display": "Life goals."
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/va-cond-meghan-weight",
+      "display": "Weight management"
+    }
+  ],
+  "careTeam": [
+    {
+      "reference": "CareTeam/va-team-visn6-cboc1-pc"
+    }
+  ],
+  "activity": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Take once daily in the morning"
+        }
+      ],
+      "reference": {
+        "reference": "MedicationRequest/va-med-meghan-prozac",
+        "display": "Fluoxetine 20 MG Oral Capsule [Prozac]"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "After urinating, before breakfast"
+        }
+      ],
+      "detail": {
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/care-plan-activity-category",
+              "code": "observation",
+              "display": "Observation"
+            }
+          ],
+          "text": "Observation"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ],
+          "text": "Weight"
+        },
+        "description": "It is very important to weight yourself each morning, after going to the bathroom and before breakfast. Increased weight can be a sign that you are retaining fluid and can lead to worsening heart failure.",
+        "status": "in-progress",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 1,
+            "period": 7,
+            "periodUnit": "d"
+          }
+        }
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Walk at a comfortable pace"
+        }
+      ],
+      "detail": {
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/care-plan-activity-category",
+              "code": "procedure",
+              "display": "Procedure"
+            }
+          ],
+          "text": "Procedure"
+        },
+        "code": {
+          "text": "Exercise"
+        },
+        "description": "Walk daily at a comfortable pace for as long as you are able. Stop if you develop shortness of breath, chest pain, or palpatations.",
+        "status": "in-progress",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Daily Step Count"
+        }
+      ],
+      "detail": {
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/care-plan-activity-category",
+              "code": "observation",
+              "display": "Observation"
+            }
+          ],
+          "text": "Observation"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "41950-7",
+              "display": "Number of steps in 24 hour Measured"
+            }
+          ],
+          "text": "Steps"
+        },
+        "description": "Record your daily total step count before going to bed each evening.",
+        "status": "in-progress",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    }
+  ]
+}

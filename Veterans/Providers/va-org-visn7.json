@@ -1,0 +1,57 @@
+{
+  "resourceType": "Organization",
+  "id": "va-org-visn7",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>VISN 7: VA Southeast Network</div>"
+  },
+  "active": true,
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/organization-type",
+        "code": "prov",
+        "display": "Healthcare Provider"
+      },
+      {
+        "system": "http://va.gov/fhir/organization-type",
+        "code": "visn",
+        "display": "Veterans Integrated Service Network"
+      }
+    ],
+    "text": "Healthcare Provider"
+  },
+  "name": "VA Southeast Network",
+  "alias": [
+    "VISN 7"
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "678-924-5700",
+      "use": "work"
+    },
+    {
+      "system": "phone",
+      "value": "800-224-4087",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "type": "both",
+      "line": [
+        "3700 Crestwood Parkway, Suite 500"
+      ],
+      "city": "Duluth",
+      "postalCode": "30096",
+      "state": "GA",
+      "country": "USA"
+    }
+  ],
+  "partOf": {
+    "reference": "Organization/va-org-vha",
+    "display": "Veterans Health Administration"
+  }
+}

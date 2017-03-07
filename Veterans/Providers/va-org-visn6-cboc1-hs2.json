@@ -1,0 +1,50 @@
+{
+  "resourceType": "HealthcareService",
+  "id": "va-org-visn6-cboc1-hs2",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Virginia Beach CBOC - Mental Health</div>"
+  },
+  "active": true,
+  "providedBy": {
+    "reference": "Organization/va-org-visn6-cboc1",
+    "display": "Virginia Beach CBOC"
+  },
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "708168004",
+          "display": "Mental health service"
+        }
+      ]
+    }
+  ],
+  "name": "Mental Health",
+  "referralMethod": [
+    {
+      "coding": [
+        {
+          "code": "phone",
+          "display": "Phone"
+        }
+      ]
+    }
+  ],
+  "appointmentRequired": false,
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
+      "availableStartTime": "08:00:00",
+      "availableEndTime": "04:30:00"
+    }
+  ],
+  "availabilityExceptions": "Excluding Federal Holidays"
+}

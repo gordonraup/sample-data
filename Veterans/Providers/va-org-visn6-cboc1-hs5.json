@@ -1,0 +1,50 @@
+{
+  "resourceType": "HealthcareService",
+  "id": "va-org-visn6-cboc1-hs5",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Virginia Beach CBOC - Social Work Services</div>"
+  },
+  "active": true,
+  "providedBy": {
+    "reference": "Organization/va-org-visn6-cboc1",
+    "display": "Virginia Beach CBOC"
+  },
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "243224001",
+          "display": "Social therapy"
+        }
+      ]
+    }
+  ],
+  "name": "Social Work Services",
+  "referralMethod": [
+    {
+      "coding": [
+        {
+          "code": "phone",
+          "display": "Phone"
+        }
+      ]
+    }
+  ],
+  "appointmentRequired": false,
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
+      "availableStartTime": "08:00:00",
+      "availableEndTime": "04:30:00"
+    }
+  ],
+  "availabilityExceptions": "Excluding Federal Holidays"
+}

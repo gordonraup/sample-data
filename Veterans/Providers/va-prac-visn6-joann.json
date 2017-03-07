@@ -1,0 +1,34 @@
+{
+  "resourceType": "Practitioner",
+  "id": "va-prac-visn6-joann",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Practitioner"
+    ]
+  },
+  "active": true,
+  "name": [
+    {
+      "text": "Joann, RN",
+      "family": "Anonymouos",
+      "given": [
+        "Joann"
+      ],
+      "suffix": [
+        "RN"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "757-722-9961",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "joann@woohoo.com"
+    }
+  ],
+  "gender": "female"
+}

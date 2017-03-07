@@ -1,0 +1,33 @@
+{
+  "resourceType": "Organization",
+  "id": "va-org-vha",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Veterans Health Administration (VHA)</div>"
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/organization-type",
+        "code": "prov",
+        "display": "Healthcare Provider"
+      }
+    ],
+    "text": "Healthcare Provider"
+  },
+  "name": "Veterans Health Administration",
+  "alias": [
+    "VHA"
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-877-222-8387",
+      "use": "work"
+    }
+  ],
+  "partOf": {
+    "reference": "Organization/va-org",
+    "display": "U.S. Department of Veterans Affairs"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "va-med-meghan-prozac",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Prozac 20mg orally per day</div></div>"
+  },
+  "status": "active",
+  "stage": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/medication-request-stage",
+        "code": "original-order",
+        "display": "Original Order"
+      }
+    ],
+    "text": "Original Order"
+  },
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "310385",
+        "display": "Fluoxetine 20 MG Oral Capsule [Prozac]"
+      }
+    ],
+    "text": "Prozac 10 MG Oral Capsule"
+  },
+  "patient": {
+    "reference": "Patient/va-pat-meghan",
+    "display": "Meghan"
+  },
+  "dateWritten": "2016-11-30",
+  "requester": {
+    "reference": "Practitioner/va-prac-visn6-francis",
+    "display": "Dr. Francis, MD"
+  },
+  "note": [
+    {
+      "text": "This medication may improve your mood, sleep, appetite, and energy level and may help restore your interest in daily living. It may decrease fear, anxiety, unwanted thoughts, and the number of panic attacks. It may also reduce the urge to perform repeated tasks (compulsions such as hand-washing, counting, and checking) that interfere with daily living."
+    },
+    {
+      "text": "It is important to continue taking this medication as prescribed even if you feel well. Do not stop taking this medication without first consulting your doctor. Some conditions may become worse when the drug is abruptly stopped. Your dose may need to be gradually decreased."
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "text": "Take this medication by mouth once daily in the morning. Fluoxetine (Prozac) is used to treat depression, panic attacks, obsessive compulsive disorder, and post traumatic stress disorder (PTSD). ",
+      "timing": {
+        "repeat": {
+          "boundsPeriod": {
+            "start": "2016-12-01",
+            "end": "2017-06-30"
+          },
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "26643006",
+            "display": "Oral route"
+          }
+        ],
+        "text": "Oral route"
+      },
+      "doseQuantity": {
+        "value": 10,
+        "unit": "mg"
+      }
+    }
+  ]
+}
