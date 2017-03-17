@@ -1,0 +1,40 @@
+{
+  "resourceType": "CareTeam",
+  "id": "va-team-visn6-cboc1-mcc",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/CareTeam"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Virginia Beach CBOC, Maternity Care Team</div></div>"
+  },
+  "participant": [
+    {
+      "role": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "446050000",
+            "display": "Primary care physician"
+          }
+        ],
+        "text": "Primary Care Physician"
+      },
+      "member": {
+        "reference": "Practitioner/va-prac-visn6-francis",
+        "display": "Dr. Francis"
+      }
+    },
+    {
+      "role": {
+        "text": "Maternity Care Coordinator (MCC)"
+      },
+      "member": {
+        "reference": "Practitioner/va-prac-visn6-vera",
+        "display": "Vera, RN"
+      }
+    }
+  ]
+}

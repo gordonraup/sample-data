@@ -8,6 +8,7 @@
 # Providers
 . ../load-resource.sh $1 Practitioner Providers va-prac-visn6-francis
 . ../load-resource.sh $1 Practitioner Providers va-prac-visn6-pamela
+. ../load-resource.sh $1 Practitioner Providers va-prac-visn6-vera
 . ../load-resource.sh $1 Practitioner Providers va-prac-visn6-joann
 . ../load-resource.sh $1 Practitioner Providers va-prac-visn6-joe
 . ../load-resource.sh $1 Practitioner Providers va-prac-visn6-amy
@@ -38,6 +39,7 @@
 . ../load-resource.sh $1 Condition Patients va-cond-meghan-headache
 . ../load-resource.sh $1 Condition Patients va-cond-meghan-ptsd
 . ../load-resource.sh $1 Condition Patients va-cond-meghan-weight
+. ../load-resource.sh $1 Condition Patients va-cond-meghan-pregnant
 
 . ../load-resource.sh $1 Condition Patients va-cond-dan-depression
 . ../load-resource.sh $1 Condition Patients va-cond-dan-ptsd
@@ -55,6 +57,9 @@
 
 # Patient Medications
 . ../load-resource.sh $1 MedicationRequest Patients va-med-meghan-prozac
+. ../load-resource.sh $1 MedicationRequest Patients va-med-meghan-aptiom
+. ../load-resource.sh $1 MedicationRequest Patients va-med-meghan-vitamin-d
+. ../load-resource.sh $1 MedicationRequest Patients va-med-meghan-folic-acid
 
 . ../load-resource.sh $1 MedicationRequest Patients va-med-dan-prozac
 . ../load-resource.sh $1 MedicationRequest Patients va-med-dan-metformin
@@ -67,3 +72,6 @@
 # CareTeam and CarePlan
 . ../load-resource.sh $1 CareTeam Providers va-team-visn6-cboc1-pc
 . ../load-resource.sh $1 CarePlan Patients va-plan-meghan-pc
+
+. ../load-resource.sh $1 CareTeam Providers va-team-visn6-cboc1-mcc
+. ../load-resource.sh $1 CarePlan Patients va-plan-meghan-prenatal
