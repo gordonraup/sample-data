@@ -3,7 +3,7 @@
   "id": "va-org-visn6-vamc1",
   "text": {
     "status": "generated",
-    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Salem VA Medical Center</div>"
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Hampton VA Medical Center</div>"
   },
   "active": true,
   "type": {
@@ -21,16 +21,16 @@
     ],
     "text": "Healthcare Provider"
   },
-  "name": "Salem VA Medical Center",
+  "name": "Hampton VA Medical Center",
   "telecom": [
     {
       "system": "phone",
-      "value": "540-982-2463",
+      "value": "757-722-9961",
       "use": "work"
     },
     {
       "system": "phone",
-      "value": "888-982-2463",
+      "value": "866-544-9961",
       "use": "work"
     }
   ],
@@ -39,10 +39,10 @@
       "use": "work",
       "type": "both",
       "line": [
-        "1970 Roanoke Blvd."
+        "100 Emancipation Drive"
       ],
-      "city": "Salem",
-      "postalCode": "24153",
+      "city": "Hampton",
+      "postalCode": "23667",
       "state": "VA",
       "country": "USA"
     }

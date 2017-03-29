@@ -1,6 +1,6 @@
 {
   "resourceType": "CareTeam",
-  "id": "va-team-visn6-cboc1-pc",
+  "id": "va-team-visn6-vamc1-pc",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/CareTeam"
@@ -8,8 +8,9 @@
   },
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Virginia Beach CBOC, Primary Care Team</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Hampton, VA, VAMC, Primary Care PACT</div></div>"
   },
+  "name": "Primary Care PACT",
   "participant": [
     {
       "role": {

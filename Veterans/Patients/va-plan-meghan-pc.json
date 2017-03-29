@@ -20,6 +20,14 @@
     {
       "reference": "Goal/va-goal-meghan-1",
       "display": "Life goals."
+    },
+    {
+      "reference": "Goal/va-goal-meghan-weight",
+      "display": "Maintain weight under 130 lbs"
+    },
+    {
+      "reference": "Goal/va-goal-meghan-child",
+      "display": "Add child to our family"
     }
   ],
   "addresses": [
@@ -30,7 +38,10 @@
   ],
   "careTeam": [
     {
-      "reference": "CareTeam/va-team-visn6-cboc1-pc"
+      "reference": "CareTeam/va-team-visn6-vamc1-pc"
+    },
+    {
+      "reference": "CareTeam/va-team-visn6-cboc1-mental-health"
     }
   ],
   "activity": [
@@ -120,6 +131,13 @@
           "text": "Procedure"
         },
         "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "226029000",
+              "display": "Exercises"
+            }
+          ],
           "text": "Exercise"
         },
         "description": "Walk daily at a comfortable pace for as long as you are able. Stop if you develop shortness of breath, chest pain, or palpatations.",

@@ -1,0 +1,54 @@
+{
+  "resourceType": "Goal",
+  "id": "va-goal-meghan-weight",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Goal"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/goal-target",
+      "measure": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "29463-7",
+            "display": "Body weight"
+          }
+        ],
+        "text": "Body weight"
+      },
+      "valueQuantity": {
+        "value": "130",
+        "comparator": "<",
+        "unit": "lb",
+        "system": "http://unitsofmeasure.org/",
+        "code": "[lb_av]"
+      }
+    }
+  ],
+  "startDate": "2016-04-30",
+  "status": "in-progress",
+  "priority": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/goal-priority",
+        "code": "high",
+        "display": "high"
+      }
+    ],
+    "text": "high"
+  },
+  "subject": {
+    "reference": "Patient/va-pat-meghan",
+    "display": "Meghan"
+  },
+  "author": {
+    "reference": "Practitioner/va-prac-visn6-francis",
+    "display": "Dr. Francis, MD"
+  },
+  "description": {
+    "text": "Maintain weight under 130 lbs."
+  }
+}
