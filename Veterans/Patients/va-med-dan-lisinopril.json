@@ -11,16 +11,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>MedicationRequest: Lisinopril 10 MG Oral Tablet</div></div>"
   },
   "status": "active",
-  "stage": {
-    "coding": [
-      {
-        "system": "http://hl7.org/fhir/ValueSet/medication-request-stage",
-        "code": "original-order",
-        "display": "Original Order"
-      }
-    ],
-    "text": "Original Order"
-  },
+  "intent": "order",
   "medicationCodeableConcept": {
     "coding": [
       {
@@ -31,14 +22,16 @@
     ],
     "text": "Lisinopril 10 MG Oral Tablet"
   },
-  "patient": {
+  "subject": {
     "reference": "Patient/va-pat-dan",
     "display": "Dan"
   },
-  "dateWritten": "2016-09-20",
+  "authoredOn": "2016-09-20",
   "requester": {
-    "reference": "Practitioner/va-prac-visn6-francis",
-    "display": "Dr. Francis, MD"
+    "agent": {
+      "reference": "Practitioner/va-prac-visn6-francis",
+      "display": "Dr. Francis, MD"
+    }
   },
   "dosageInstruction": [
     {

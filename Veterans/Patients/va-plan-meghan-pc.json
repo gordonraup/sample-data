@@ -15,7 +15,8 @@
     "display": "Meghan"
   },
   "status": "active",
-  "description": "Primary Care",
+  "intent": "plan",
+  "title": "Primary Care",
   "goal": [
     {
       "reference": "Goal/va-goal-meghan-1",

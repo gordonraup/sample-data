@@ -15,7 +15,8 @@
     "display": "Byron"
   },
   "status": "active",
-  "description": "Primary Care",
+  "intent": "plan",
+  "title": "Primary Care",
   "goal": [
     {
       "reference": "Goal/va-goal-byron-1",

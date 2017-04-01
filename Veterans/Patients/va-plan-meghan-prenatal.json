@@ -15,7 +15,8 @@
     "display": "Meghan"
   },
   "status": "active",
-  "description": "Prenatal Care Plan",
+  "intent": "plan",
+  "title": "Prenatal Care Plan",
   "goal": [
     {
       "reference": "Goal/va-goal-meghan-1",

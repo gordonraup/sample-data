@@ -11,16 +11,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Vitamin D 1000 UNT orally per day</div></div>"
   },
   "status": "active",
-  "stage": {
-    "coding": [
-      {
-        "system": "http://hl7.org/fhir/ValueSet/medication-request-stage",
-        "code": "original-order",
-        "display": "Original Order"
-      }
-    ],
-    "text": "Original Order"
-  },
+  "intent": "order",
   "medicationCodeableConcept": {
     "coding": [
       {
@@ -31,14 +22,16 @@
     ],
     "text": "Vitamin D 1000 IU Oral Tablet"
   },
-  "patient": {
+  "subject": {
     "reference": "Patient/va-pat-meghan",
     "display": "Meghan"
   },
-  "dateWritten": "2017-01-15",
+  "authoredOn": "2017-01-15",
   "requester": {
-    "reference": "Practitioner/va-prac-visn6-francis",
-    "display": "Dr. Francis, MD"
+    "agent": {
+      "reference": "Practitioner/va-prac-visn6-francis",
+      "display": "Dr. Francis, MD"
+    }
   },
   "note": [
     {

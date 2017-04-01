@@ -15,7 +15,8 @@
     "display": "Byron"
   },
   "status": "active",
-  "description": "Mental Health",
+  "intent": "plan",
+  "title": "Mental Health",
   "goal": [
     {
       "reference": "Goal/va-goal-byron-crowds",

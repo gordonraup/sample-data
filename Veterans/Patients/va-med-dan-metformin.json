@@ -11,16 +11,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>MedicationRequest: Metformin hydrochloride 500 MG Oral Tablet</div></div>"
   },
   "status": "active",
-  "stage": {
-    "coding": [
-      {
-        "system": "http://hl7.org/fhir/ValueSet/medication-request-stage",
-        "code": "original-order",
-        "display": "Original Order"
-      }
-    ],
-    "text": "Original Order"
-  },
+  "intent": "order",
   "medicationCodeableConcept": {
     "coding": [
       {
@@ -31,14 +22,16 @@
     ],
     "text": "Metformin 500 MG Oral Tablet"
   },
-  "patient": {
+  "subject": {
     "reference": "Patient/va-pat-dan",
     "display": "Dan"
   },
-  "dateWritten": "2016-11-30",
+  "authoredOn": "2016-11-30",
   "requester": {
-    "reference": "Practitioner/va-prac-visn6-francis",
-    "display": "Dr. Francis, MD"
+    "agent": {
+      "reference": "Practitioner/va-prac-visn6-francis",
+      "display": "Dr. Francis, MD"
+    }
   },
   "dosageInstruction": [
     {
