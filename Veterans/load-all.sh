@@ -46,6 +46,8 @@
 . ../load-resource.sh $1 Condition Patients va-cond-dan-ptsd
 . ../load-resource.sh $1 Condition Patients va-cond-dan-hypertension
 . ../load-resource.sh $1 Condition Patients va-cond-dan-dm
+. ../load-resource.sh $1 Condition Patients va-cond-dan-concern-glucose
+. ../load-resource.sh $1 Condition Patients va-cond-dan-concern-foot
 
 . ../load-resource.sh $1 Condition Patients va-cond-byron-depression
 . ../load-resource.sh $1 Condition Patients va-cond-byron-ptsd
@@ -56,6 +58,8 @@
 . ../load-resource.sh $1 Goal Patients va-goal-meghan-weight
 . ../load-resource.sh $1 Goal Patients va-goal-meghan-child
 . ../load-resource.sh $1 Goal Patients va-goal-dan-1
+. ../load-resource.sh $1 Goal Patients va-goal-dan-a1c
+. ../load-resource.sh $1 Goal Patients va-goal-dan-glucose
 
 . ../load-resource.sh $1 Goal Patients va-goal-byron-1
 . ../load-resource.sh $1 Goal Patients va-goal-byron-crowds
@@ -87,3 +91,6 @@
 
 . ../load-resource.sh $1 CarePlan Patients va-plan-byron-pc
 . ../load-resource.sh $1 CarePlan Patients va-plan-byron-mental
+
+. ../load-resource.sh $1 CarePlan Patients va-plan-dan-pc
+

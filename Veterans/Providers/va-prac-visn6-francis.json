@@ -11,6 +11,9 @@
     {
       "text": "Dr. Francis, MD",
       "family": "Francis",
+      "prefix": [
+        "Dr."
+      ],
       "suffix": [
         "MD"
       ]

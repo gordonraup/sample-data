@@ -27,22 +27,6 @@
         "reference": "Practitioner/va-prac-visn6-beach",
         "display": "Dr. Beach, PsyD"
       }
-    },
-    {
-      "role": {
-        "coding": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "224535009",
-            "display": "Registered nurse"
-          }
-        ],
-        "text": "Registered Nurse (RN)"
-      },
-      "member": {
-        "reference": "Practitioner/va-prac-visn6-joann",
-        "display": "Joann, RN"
-      }
     }
   ]
 }

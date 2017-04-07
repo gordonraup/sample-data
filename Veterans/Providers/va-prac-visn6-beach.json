@@ -11,6 +11,9 @@
     {
       "text": "Dr. Beach, PsyD",
       "family": "Beach",
+      "prefix": [
+        "Dr."
+      ],
       "suffix": [
         "PsyD"
       ]

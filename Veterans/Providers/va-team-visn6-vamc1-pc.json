@@ -43,38 +43,6 @@
         "reference": "Practitioner/va-prac-visn6-pamela",
         "display": "Pamela, RN"
       }
-    },
-    {
-      "role": {
-        "coding": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "106353008",
-            "display": "Clerk"
-          }
-        ],
-        "text": "Health Administration Service (HAS) Clerk"
-      },
-      "member": {
-        "reference": "Practitioner/va-prac-visn6-joe",
-        "display": "Joe"
-      }
-    },
-    {
-      "role": {
-        "coding": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "106353008",
-            "display": "Clerk"
-          }
-        ],
-        "text": "Medical Administration Service (MAS) Clerk, Radiology"
-      },
-      "member": {
-        "reference": "Practitioner/va-prac-visn6-amy",
-        "display": "Amy"
-      }
     }
   ]
 }
