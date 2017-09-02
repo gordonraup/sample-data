@@ -8,11 +8,8 @@ Because FHIR is still evolving there may be different versions of the resources:
 - the `fhir_1.8.0` branch contains **STU-3** (v`1.8.0`) resources
 - the `develop` branch contains (nothing at this time)
 
-Diabetes Care Plan Scenarios
-===================
-These FHIR care plan scenarios were created to support the [Care Plan Track of HL7 FHIR Connectathon 16][track], held on Sept 9-10, 2017. The scenario scope and contents are expected to evolve and grow based on both clinical and technical experience.
 
-Initially, all of these provider organization resources are loaded into a single FHIR server, but we expect to distribute the clinical content so that each provider organization is supported by a distinct FHIR server.
+These FHIR care plan scenarios were created to support the [Care Plan Track of HL7 FHIR Connectathon 16][track], held on Sept 9-10, 2017. The scenario scope and contents are expected to evolve and grow based on both clinical and technical experience. Initially, all of these provider organization resources are loaded into a single FHIR server, but we expect to distribute the clinical content so that each provider organization is supported by a distinct FHIR server.
 
 [track]: http://wiki.hl7.org/index.php?title=201709_Care_Plan
 
