@@ -4,36 +4,36 @@ Sample 🔥FHIR CarePlan and related resources for chronic care scenarios.
 
 Because FHIR is still evolving there may be different versions of the resources:
 
-- the `master` branch contains **STU-3** (v`3.0.0`) resources
+- the `master` branch contains **STU-3** (v`3.0.1`) resources
 - the `fhir_1.8.0` branch contains **STU-3** (v`1.8.0`) resources
 - the `develop` branch contains (nothing at this time)
 
 Diabetes Care Plan Scenarios
 ===================
-These FHIR care plan scenarios were originally created to support the [Care Plan Track of HL7 FHIR Connectathon 14][track], held on Jan 14-15, 2017. The scenario scope and contents are expected to evolve and grow based on both clinical and technical experience.
-
-The sample resources are based on a storyboard for chronic conditions that illustrates the clinical documentation used and created by care providers, and communication flow between a patient and care team members involved in his/her long term care. The chronic condition selected for the first storyboard is [Type II Diabetes Mellitus (Type II DM)](./Diabetes/Care Plan Storyboard - Diabetes Mellitus.pdf).
-
-For the Type II Diabetes scenario, the FHIR resource files are divided into four folders:
-
-- Patients: Patients, RelatedPerson, and other clinical resources
-- Providers: Organizations, Practitioners, other related resources
-- PCP: healthcare provider organization for patient’s Primary Care Provider (PCP)
-- Dietitian: healthcare provider organization for a specialist referral
-- Podiatry: healthcare provider organization for a specialist referral
+These FHIR care plan scenarios were created to support the [Care Plan Track of HL7 FHIR Connectathon 16][track], held on Sept 9-10, 2017. The scenario scope and contents are expected to evolve and grow based on both clinical and technical experience.
 
 Initially, all of these provider organization resources are loaded into a single FHIR server, but we expect to distribute the clinical content so that each provider organization is supported by a distinct FHIR server.
 
-[track]: http://wiki.hl7.org/index.php?title=201701_Care_Plan
+[track]: http://wiki.hl7.org/index.php?title=201709_Care_Plan
 
 Veteran Clinical Scenarios
 ===================
-Description TBD
+Meghan
+-------
+Meghan is 33 years old and a post-9/11 Veteran who served in Afghanistan and is recovering from a Traumatic Brain Injury (TBI) and PTSD. Meghan recently became pregnant with her third child and is coordinating care plans between her primary care provider at VA and a community provider outside of VA for her prenatal care. Meghan has concerns about possible negative effects of her PTSD anti-anxiety medication on her new baby.
+
+Dan
+-------
+Dan is 69 years old and a Vietnam Veteran who continues to struggle with the effects of PTSD and Diabetes (resulting from Agent Orange exposure). He is also being treated for hypertension.
+
+Byron
+-------
+Byron is 36 years old and deployed to Iraq three times as a member of the Marine Corps. He earned the Purple Heart for a leg injury received in an IED attack. His PTSD and anxiety led him to develop a problem with alcohol. His wife and VA care team are concerned about Byron’s risk for suicide.
 
 
 Loading these files into your FHIR server
 -----------------------------------------
-Each file contains a single FHIR resource.  A shell script is included that loads all resources into your FHIR server:
+Each file contains a FHIR transaction bundle.  A shell script is included that loads all resources into your FHIR server:
 
 `$. load-all http://fhir3.healthintersections.com.au/open > log.txt`
 

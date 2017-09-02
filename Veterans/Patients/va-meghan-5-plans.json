@@ -1,0 +1,667 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/va-goal-meghan-1"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "va-goal-meghan-1",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Life goals</div></div>"
+        },
+        "status": "in-progress",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/goal-priority",
+              "code": "high",
+              "display": "high"
+            }
+          ],
+          "text": "high"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "author": {
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        },
+        "description": {
+          "text": "Meghan strives to make a difference. She wants to be healthy so that she can accomplish her life goals."
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/va-goal-meghan-child"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "va-goal-meghan-child",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "status": "in-progress",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/goal-priority",
+              "code": "high",
+              "display": "high"
+            }
+          ],
+          "text": "high"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "author": {
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        },
+        "description": {
+          "text": "Add a third child to our family with my new husband."
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/va-goal-meghan-seizure"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "va-goal-meghan-seizure",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "status": "in-progress",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/goal-priority",
+              "code": "high",
+              "display": "high"
+            }
+          ],
+          "text": "high"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "author": {
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        },
+        "description": {
+          "text": "Prevent seizures during pregnancy."
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/va-goal-meghan-weight"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "va-goal-meghan-weight",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "target": {
+          "measure": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "29463-7",
+                "display": "Body weight"
+              }
+            ],
+            "text": "Body weight"
+          },
+          "detailQuantity": {
+            "value": "125",
+            "comparator": "<",
+            "unit": "lb",
+            "system": "http://unitsofmeasure.org/",
+            "code": "[lb_av]"
+          },
+          "dueDate": "2017-10-31"
+        }
+      },
+      "startDate": "2016-04-30",
+      "status": "in-progress",
+      "priority": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/goal-priority",
+            "code": "high",
+            "display": "high"
+          }
+        ],
+        "text": "high"
+      },
+      "subject": {
+        "reference": "Patient/va-pat-meghan",
+        "display": "Meghan"
+      },
+      "author": {
+        "reference": "Practitioner/va-prac-visn6-francis",
+        "display": "Dr. Francis, MD"
+      },
+      "description": {
+        "text": "Maintain weight under 130 lbs."
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "ProcedureRequest/va-procreq-meghan-yoga-backx"
+      },
+      "resource": {
+        "resourceType": "ProcedureRequest",
+        "id": "va-procreq-meghan-yoga-back",
+        "status": "active",
+        "intent": "plan",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229224000",
+              "display": "Participation in yoga (regime/therapy)"
+            }
+          ],
+          "text": "Yoga for lower back pain"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "performer": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "occurrenceTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 2,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        },
+        "supportingInfo": {
+          "reference": "Media/va-media-yoga-back",
+          "display": "Yoga for Back Pain"
+        },
+        "note": [
+          {
+            "text": "Lying on your stomach, prop yourself up on your forearms. Align your elbows directly under your shoulders. Press firmly through your palms and the tops of your feet. Press your pubic bone forward. You will feel sensations in your lower back, but breathe through it. You are allowing blood flow into the lower back for healing. Hold for 1-3 minutes."
+          },
+          {
+            "text": "https://breakingmuscle.com/learn/heal-your-lower-back-pain-with-these-5-yoga-poses"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/va-plan-meghan-pc"
+      },
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "va-plan-meghan-pc",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Meghan's primary care plan</div></div>"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "status": "active",
+        "intent": "plan",
+        "title": "Primary Care",
+        "goal": [
+          {
+            "reference": "Goal/va-goal-meghan-1",
+            "display": "Life goals."
+          },
+          {
+            "reference": "Goal/va-goal-meghan-weight",
+            "display": "Maintain weight under 130 lbs"
+          },
+          {
+            "reference": "Goal/va-goal-meghan-child",
+            "display": "Add child to our family"
+          }
+        ],
+        "addresses": [
+          {
+            "reference": "Condition/va-cond-meghan-ptsd",
+            "display": "PTSD"
+          },
+          {
+            "reference": "Condition/va-cond-meghan-depression",
+            "display": "Depression"
+          },
+          {
+            "reference": "Condition/va-cond-meghan-tbi",
+            "display": "TBI"
+          },
+          {
+            "reference": "Condition/va-cond-meghan-headache",
+            "display": "Headaches"
+          },
+          {
+            "reference": "Condition/va-cond-meghan-weight",
+            "display": "Weight management"
+          },
+          {
+            "reference": "Condition/va-cond-meghan-backpain",
+            "display": "Lower back pain"
+          }
+        ],
+        "careTeam": [
+          {
+            "reference": "CareTeam/va-team-visn6-vamc1-pc"
+          },
+          {
+            "reference": "CareTeam/va-team-visn6-cboc1-mental-health"
+          }
+        ],
+        "activity": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Take once daily in the morning"
+              }
+            ],
+            "reference": {
+              "reference": "MedicationRequest/va-med-meghan-paxil",
+              "display": "Paxil 10 MG Oral Tablet"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Take once daily in the morning"
+              }
+            ],
+            "reference": {
+              "reference": "MedicationRequest/va-med-meghan-aptiom",
+              "display": "Aptiom 800 MG Oral Tablet"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Morning and evening"
+              }
+            ],
+            "reference": {
+              "reference": "ProcedureRequest/va-procreq-meghan-yoga-back",
+              "display": "Yoga for lower back pain"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "As needed for back pain and headaches"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "drug",
+                    "display": "Drug"
+                  }
+                ]
+              },
+              "productCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                    "code": "198436",
+                    "display": "Acetaminophen 325 MG Oral Capsule"
+                  }
+                ],
+                "text": "Acetaminophen (Tylenol®) 325 MG"
+              },
+              "description": "Use acetaminophen (Tylenol®) for pain relief if needed; use of Ibuprofen (Advil®) or acetylsalicylic acid (Aspirin) is not recommended during pregnancy.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2017-02-04",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 3,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "What is your distress level?"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "80296-7",
+                    "display": "Mood"
+                  }
+                ],
+                "text": "Mood"
+              },
+              "description": "Distress includes everything negative you are feeling",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2016-11-30",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 7,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "How was your pain today?"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "75260-0",
+                    "display": "Back Pain"
+                  }
+                ],
+                "text": "Back Pain"
+              },
+              "description": "Monitoring changes in lower back pain level will help your care team develop the best plan for your treatment.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2016-11-30",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 7,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/va-plan-meghan-prenatal"
+      },
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "va-plan-meghan-prenatal",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Meghan's prenatal care plan</div></div>"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "status": "active",
+        "intent": "plan",
+        "title": "Prenatal Care Plan",
+        "goal": [
+          {
+            "reference": "Goal/va-goal-meghan-seizure",
+            "display": "Prevent seizures"
+          }
+        ],
+        "addresses": [
+          {
+            "reference": "Condition/va-cond-meghan-pregnant",
+            "display": "Pregnant"
+          },
+          {
+            "reference": "Condition/va-cond-meghan-teratogenic",
+            "display": "Teratogenic effect"
+          }
+        ],
+        "careTeam": [
+          {
+            "reference": "CareTeam/va-team-visn6-cboc1-mcc"
+          }
+        ],
+        "activity": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Take once daily in the morning"
+              }
+            ],
+            "reference": {
+              "reference": "MedicationRequest/va-med-meghan-vitamin-d",
+              "display": "Vitamin D 1000 units"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Take once daily in the morning"
+              }
+            ],
+            "reference": {
+              "reference": "MedicationRequest/va-med-meghan-folic-acid",
+              "display": "Folic Acid 0.4 MG Oral Tablet"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "After urinating, before breakfast"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "29463-7",
+                    "display": "Body weight"
+                  }
+                ],
+                "text": "Weight"
+              },
+              "description": "It is very important to weight yourself in the morning, after going to the bathroom and before breakfast.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2016-11-30",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 7,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Walk at a comfortable pace"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "procedure",
+                    "display": "Procedure"
+                  }
+                ],
+                "text": "Procedure"
+              },
+              "code": {
+                "text": "Exercise"
+              },
+              "description": "Walk daily at a comfortable pace for as long as you are able. Stop if you develop shortness of breath, chest pain, or palpatations.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2016-11-30",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Daily Step Count"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "41950-7",
+                    "display": "Number of steps in 24 hour Measured"
+                  }
+                ],
+                "text": "Steps"
+              },
+              "description": "Record your daily total step count before going to bed each evening.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2016-11-30",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

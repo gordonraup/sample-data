@@ -1,0 +1,311 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/va-med-meghan-aptiom"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "va-med-meghan-aptiom",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Aptiom 800 MG orally per day</div></div>"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1482527",
+              "display": "Aptiom 800 MG Oral Tablet"
+            }
+          ],
+          "text": "Aptiom 800 MG Oral Tablet"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "authoredOn": "2016-07-15",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "Take this medication by mouth once daily in the morning. This medication may reduce siezures.",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2016-07-15",
+                  "end": "2017-07-15"
+                },
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "Oral route"
+            },
+            "doseQuantity": {
+              "value": 800,
+              "unit": "mg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/va-med-meghan-folic-acid"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "va-med-meghan-folic-acid",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Folic Acid 0.4 MG orally per day</div></div>"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "198640",
+              "display": "Folic Acid 0.4 MG Oral Tablet"
+            }
+          ],
+          "text": "Folic Acid 0.4 MG Oral Tablet"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "authoredOn": "2017-01-15",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        },
+        "note": [
+          {
+            "text": "Folic acid is a B vitamin. If a woman has enough folic acid in her body at least 1 month before and during pregnancy, it can help prevent major birth defects of the baby’s brain and spine."
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "text": "Take this medication by mouth once daily in the morning.",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2017-01-15",
+                  "end": "2018-01-15"
+                },
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "Oral route"
+            },
+            "doseQuantity": {
+              "value": 0.4,
+              "unit": "mg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/va-med-meghan-paxil"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "va-med-meghan-paxil",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Paxil 10 MG Oral Tablet</div></div>"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "211699",
+              "display": "Paxil 10 MG Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "authoredOn": "2016-11-30",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        },
+        "note": [
+          {
+            "text": "Paroxetine (Paxil) is used to treat depression, panic attacks, obsessive-compulsive disorder (OCD), anxiety disorders, and post-traumatic stress disorder. It works by helping to restore the balance of a certain natural substance (serotonin) in the brain."
+          },
+          {
+            "text": "Paroxetine is known as a selective serotonin reuptake inhibitor (SSRI). This medication may improve your mood, sleep, appetite, and energy level and may help restore your interest in daily living. It may decrease fear, anxiety, unwanted thoughts, and the number of panic attacks. It may also reduce the urge to perform repeated tasks (compulsions such as hand-washing, counting, and checking) that interfere with daily living."
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "text": "Take this medication by mouth once daily in the morning. Paroxetine (Paxil) is used to treat depression, panic attacks, obsessive-compulsive disorder (OCD), anxiety disorders, and post traumatic stress disorder (PTSD). ",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2016-12-01",
+                  "end": "2017-06-30"
+                },
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "Oral route"
+            },
+            "doseQuantity": {
+              "value": 10,
+              "unit": "mg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/va-med-meghan-vitamin-d"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "va-med-meghan-vitamin-d",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Vitamin D 1000 UNT orally per day</div></div>"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "316894",
+              "display": "Vitamin D 1000 UNT"
+            }
+          ],
+          "text": "Vitamin D 1000 IU Oral Tablet"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "authoredOn": "2017-01-15",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        },
+        "note": [
+          {
+            "text": "Not having enough vitamin D when you are pregnant or breastfeeding may prevent your baby from getting enough calcium and phosphate. This can cause him or her to develop weak teeth and bones, and in rare cases, develop rickets."
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "text": "Take this medication by mouth once daily in the morning.",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2017-01-15",
+                  "end": "2018-01-15"
+                },
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "Oral route"
+            },
+            "doseQuantity": {
+              "value": 1000,
+              "unit": "IU"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

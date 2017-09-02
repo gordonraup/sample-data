@@ -1,0 +1,527 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/va-goal-byron-life"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "va-goal-byron-life",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Life goals</div></div>"
+        },
+        "status": "in-progress",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/goal-priority",
+              "code": "high",
+              "display": "high"
+            }
+          ],
+          "text": "high"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-byron",
+          "display": "Byron"
+        },
+        "author": {
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        },
+        "description": {
+          "text": "Byron is in recovery. He spends each day strengthening his health so that he can rekindle his marriage and help other vets."
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/va-goal-byron-crowds"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "va-goal-byron-crowds",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "status": "in-progress",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/goal-priority",
+              "code": "high",
+              "display": "high"
+            }
+          ],
+          "text": "high"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-byron",
+          "display": "Byron"
+        },
+        "author": {
+          "reference": "Practitioner/va-prac-visn6-beach",
+          "display": "Dr. Beach, PsyD"
+        },
+        "description": {
+          "text": "Reduce axiety while in crowded public places."
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/va-goal-byron-sleep"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "va-goal-byron-sleep",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "status": "in-progress",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/goal-priority",
+              "code": "high",
+              "display": "high"
+            }
+          ],
+          "text": "high"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-byron",
+          "display": "Byron"
+        },
+        "author": {
+          "reference": "Practitioner/va-prac-visn6-beach",
+          "display": "Dr. Beach, PsyD"
+        },
+        "description": {
+          "text": "Sleep 8 hours per night."
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/va-med-byron-prozac"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "va-med-byron-prozac",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Prozac 20mg orally per day</div></div>"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "310385",
+              "display": "Fluoxetine 20 MG Oral Capsule [Prozac]"
+            }
+          ],
+          "text": "Prozac 10 MG Oral Capsule"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-byron",
+          "display": "Byron"
+        },
+        "authoredOn": "2017-01-20",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        },
+        "note": [
+          {
+            "text": "This medication may improve your mood, sleep, appetite, and energy level and may help restore your interest in daily living. It may decrease fear, anxiety, unwanted thoughts, and the number of panic attacks. It may also reduce the urge to perform repeated tasks (compulsions such as hand-washing, counting, and checking) that interfere with daily living."
+          },
+          {
+            "text": "It is important to continue taking this medication as prescribed even if you feel well. Do not stop taking this medication without first consulting your doctor. Some conditions may become worse when the drug is abruptly stopped. Your dose may need to be gradually decreased."
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "text": "Take this medication by mouth once daily in the morning. Fluoxetine (Prozac) is used to treat depression, panic attacks, obsessive compulsive disorder, and post traumatic stress disorder (PTSD). ",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2017-01-20",
+                  "end": "2017-09-30"
+                },
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "Oral route"
+            },
+            "doseQuantity": {
+              "value": 10,
+              "unit": "mg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/va-plan-byron-pc"
+      },
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "va-plan-byron-pc",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Byron's primary care plan</div></div>"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-byron",
+          "display": "Byron"
+        },
+        "status": "active",
+        "intent": "plan",
+        "title": "Primary Care",
+        "goal": [
+          {
+            "reference": "Goal/va-goal-byron-life",
+            "display": "Life goals."
+          }
+        ],
+        "addresses": [
+          {
+            "reference": "Condition/va-cond-byron-alcoholism",
+            "display": "Alcoholism"
+          }
+        ],
+        "careTeam": [
+          {
+            "reference": "CareTeam/va-team-visn6-vamc1-pc"
+          }
+        ],
+        "activity": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Walk at a comfortable pace"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "procedure",
+                    "display": "Procedure"
+                  }
+                ],
+                "text": "Procedure"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "226029000",
+                    "display": "Exercises"
+                  }
+                ],
+                "text": "Exercise"
+              },
+              "description": "Walk daily at a comfortable pace for as long as you are able. Stop if you develop shortness of breath, chest pain, or palpatations.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2016-11-30",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Daily Step Count"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "41950-7",
+                    "display": "Number of steps in 24 hour Measured"
+                  }
+                ],
+                "text": "Steps"
+              },
+              "description": "Record your daily total step count before going to bed each evening.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2016-11-30",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/va-plan-byron-mental"
+      },
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "va-plan-byron-mental",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Byron's mental health care plan</div></div>"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-byron",
+          "display": "Byron"
+        },
+        "status": "active",
+        "intent": "plan",
+        "title": "Mental Health",
+        "goal": [
+          {
+            "reference": "Goal/va-goal-byron-crowds",
+            "display": "Crowd anxiety"
+          },
+          {
+            "reference": "Goal/va-goal-byron-sleep",
+            "display": "Sleep 8 hours"
+          }
+        ],
+        "addresses": [
+          {
+            "reference": "Condition/va-cond-byron-ptsd",
+            "display": "PTSD - Posttraumatic stress disorder"
+          },
+          {
+            "reference": "Condition/va-cond-byron-depression",
+            "display": "Mild recurrent major depression"
+          },
+          {
+            "reference": "Condition/va-cond-byron-alcoholism",
+            "display": "Alcoholism"
+          },
+          {
+            "reference": "Condition/va-cond-byron-suicide",
+            "display": "At risk for suicide"
+          }
+        ],
+        "careTeam": [
+          {
+            "reference": "CareTeam/va-team-visn6-cboc1-mental-health"
+          }
+        ],
+        "activity": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Take once daily in the morning"
+              }
+            ],
+            "reference": {
+              "reference": "MedicationRequest/va-med-byron-prozac",
+              "display": "Fluoxetine 20 MG Oral Capsule [Prozac]"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "When feeling high anxiety"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "8867-4",
+                    "display": "Heart rate"
+                  }
+                ],
+                "text": "Heart Rate"
+              },
+              "description": "Record your heart rate using your Apple Watch, especially when you are feeling high anxiety.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2016-11-30",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 3,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "What is your distress level?"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "80296-7",
+                    "display": "Mood"
+                  }
+                ],
+                "text": "Mood"
+              },
+              "description": "Distress includes everything negative you are feeling",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2016-11-30",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 7,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Public activity outside home"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "procedure",
+                    "display": "Procedure"
+                  }
+                ],
+                "text": "Procedure"
+              },
+              "code": {
+                "text": "Public Activities"
+              },
+              "description": "Participate in some kind of public activity outside your home, e.g. grocery shopping, walk through a mall, etc.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2016-11-30",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
