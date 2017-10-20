@@ -34,7 +34,7 @@
           "reference": "Patient/va-pat-byron",
           "display": "Byron"
         },
-        "author": {
+        "expressedBy": {
           "reference": "Practitioner/va-prac-visn6-francis",
           "display": "Dr. Francis, MD"
         },
@@ -71,7 +71,7 @@
           "reference": "Patient/va-pat-byron",
           "display": "Byron"
         },
-        "author": {
+        "expressedBy": {
           "reference": "Practitioner/va-prac-visn6-beach",
           "display": "Dr. Beach, PsyD"
         },
@@ -108,7 +108,7 @@
           "reference": "Patient/va-pat-byron",
           "display": "Byron"
         },
-        "author": {
+        "expressedBy": {
           "reference": "Practitioner/va-prac-visn6-beach",
           "display": "Dr. Beach, PsyD"
         },

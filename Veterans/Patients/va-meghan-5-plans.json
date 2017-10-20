@@ -34,7 +34,7 @@
           "reference": "Patient/va-pat-meghan",
           "display": "Meghan"
         },
-        "author": {
+        "expressedBy": {
           "reference": "Practitioner/va-prac-visn6-francis",
           "display": "Dr. Francis, MD"
         },
@@ -71,9 +71,9 @@
           "reference": "Patient/va-pat-meghan",
           "display": "Meghan"
         },
-        "author": {
-          "reference": "Practitioner/va-prac-visn6-francis",
-          "display": "Dr. Francis, MD"
+        "expressedBy": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
         },
         "description": {
           "text": "Add a third child to our family with my new husband."
@@ -108,7 +108,7 @@
           "reference": "Patient/va-pat-meghan",
           "display": "Meghan"
         },
-        "author": {
+        "expressedBy": {
           "reference": "Practitioner/va-prac-visn6-francis",
           "display": "Dr. Francis, MD"
         },
@@ -130,6 +130,29 @@
             "http://hl7.org/fhir/StructureDefinition/Goal"
           ]
         },
+        "startDate": "2016-04-30",
+        "status": "in-progress",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/goal-priority",
+              "code": "high",
+              "display": "high"
+            }
+          ],
+          "text": "high"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "expressedBy": {
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        },
+        "description": {
+          "text": "Maintain weight under 130 lbs."
+        },
         "target": {
           "measure": {
             "coding": [
@@ -150,35 +173,12 @@
           },
           "dueDate": "2017-10-31"
         }
-      },
-      "startDate": "2016-04-30",
-      "status": "in-progress",
-      "priority": {
-        "coding": [
-          {
-            "system": "http://hl7.org/fhir/goal-priority",
-            "code": "high",
-            "display": "high"
-          }
-        ],
-        "text": "high"
-      },
-      "subject": {
-        "reference": "Patient/va-pat-meghan",
-        "display": "Meghan"
-      },
-      "author": {
-        "reference": "Practitioner/va-prac-visn6-francis",
-        "display": "Dr. Francis, MD"
-      },
-      "description": {
-        "text": "Maintain weight under 130 lbs."
       }
     },
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/va-procreq-meghan-yoga-backx"
+        "url": "ProcedureRequest/va-procreq-meghan-yoga-back"
       },
       "resource": {
         "resourceType": "ProcedureRequest",
@@ -335,6 +335,128 @@
             "reference": {
               "reference": "ProcedureRequest/va-procreq-meghan-yoga-back",
               "display": "Yoga for lower back pain"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Before breakfast"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "29463-7",
+                    "display": "Body weight"
+                  }
+                ],
+                "text": "Weight"
+              },
+              "description": "It is very important to weight yourself in the morning, after going to the bathroom and before breakfast.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2016-11-30",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 7,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Measured at natural waist"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "8280-0",
+                    "display": "Waist Circumference"
+                  }
+                ],
+                "text": "Waist Circumference"
+              },
+              "description": "Use a tape measure at your natural waist, midway between hips and lower rib.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2017-08-01",
+                    "end": "2018-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 7,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "39156-5",
+                    "display": "Body mass index (BMI)"
+                  }
+                ]
+              },
+              "description": "Use output from weight scale provided by your doctor",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2017-08-01",
+                    "end": "2018-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 7,
+                  "periodUnit": "d"
+                }
+              }
             }
           },
           {
@@ -536,49 +658,6 @@
             "reference": {
               "reference": "MedicationRequest/va-med-meghan-folic-acid",
               "display": "Folic Acid 0.4 MG Oral Tablet"
-            }
-          },
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
-                "valueString": "After urinating, before breakfast"
-              }
-            ],
-            "detail": {
-              "category": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/care-plan-activity-category",
-                    "code": "observation",
-                    "display": "Observation"
-                  }
-                ],
-                "text": "Observation"
-              },
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://loinc.org",
-                    "code": "29463-7",
-                    "display": "Body weight"
-                  }
-                ],
-                "text": "Weight"
-              },
-              "description": "It is very important to weight yourself in the morning, after going to the bathroom and before breakfast.",
-              "status": "in-progress",
-              "scheduledTiming": {
-                "repeat": {
-                  "boundsPeriod": {
-                    "start": "2016-11-30",
-                    "end": "2017-12-31"
-                  },
-                  "frequency": 1,
-                  "period": 7,
-                  "periodUnit": "d"
-                }
-              }
             }
           },
           {

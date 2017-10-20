@@ -34,7 +34,7 @@
           "reference": "Patient/va-pat-dan",
           "display": "Dan"
         },
-        "author": {
+        "expressedBy": {
           "reference": "Practitioner/va-prac-visn6-francis",
           "display": "Dr. Francis, MD"
         },

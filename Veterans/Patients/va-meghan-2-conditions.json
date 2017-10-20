@@ -217,7 +217,7 @@
           "reference": "Patient/va-pat-meghan",
           "display": "Meghan"
         },
-        "onsetDateTime": "2017-01-15"
+        "onsetDateTime": "2017-08-25"
       }
     },
     {
@@ -378,7 +378,7 @@
           "reference": "Patient/va-pat-meghan",
           "display": "Meghan"
         },
-        "onsetDateTime": "2017-02-07",
+        "onsetDateTime": "2017-09-07",
         "asserter": {
           "reference": "Practitioner/va-prac-visn6-francis",
           "display": "Dr. Francis, MD"
