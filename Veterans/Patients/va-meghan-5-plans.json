@@ -5,6 +5,44 @@
     {
       "request": {
         "method": "PUT",
+        "url": "CareTeam/va-careteam-meghan-personal"
+      },
+      "resource": {
+        "resourceType": "CareTeam",
+        "id": "va-careteam-meghan-personal",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CareTeam"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Meghan's personal care team</div></div>"
+        },
+        "name": "Personal care team",
+        "participant": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "133932002",
+                  "display": "Caregiver"
+                }
+              ],
+              "text": "Caregiver"
+            },
+            "member": {
+              "reference": "RelatedPerson/va-pat-meghan-related-husband",
+              "display": "Husband"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
         "url": "Goal/va-goal-meghan-1"
       },
       "resource": {
@@ -252,18 +290,14 @@
         "status": "active",
         "intent": "plan",
         "title": "Primary Care",
+        "description": "Meghan's primary care treats multiple chronic conditions from PTSD, TBI, seizures, and depression.",
+        "period": {
+          "start": "2015-03-22"
+        },
         "goal": [
-          {
-            "reference": "Goal/va-goal-meghan-1",
-            "display": "Life goals."
-          },
           {
             "reference": "Goal/va-goal-meghan-weight",
             "display": "Maintain weight under 130 lbs"
-          },
-          {
-            "reference": "Goal/va-goal-meghan-child",
-            "display": "Add child to our family"
           }
         ],
         "addresses": [
@@ -280,14 +314,6 @@
             "display": "TBI"
           },
           {
-            "reference": "Condition/va-cond-meghan-headache",
-            "display": "Headaches"
-          },
-          {
-            "reference": "Condition/va-cond-meghan-weight",
-            "display": "Weight management"
-          },
-          {
             "reference": "Condition/va-cond-meghan-backpain",
             "display": "Lower back pain"
           }
@@ -298,6 +324,9 @@
           },
           {
             "reference": "CareTeam/va-team-visn6-cboc1-mental-health"
+          },
+          {
+            "reference": "CareTeam/va-careteam-meghan-personal"
           }
         ],
         "activity": [
@@ -311,18 +340,6 @@
             "reference": {
               "reference": "MedicationRequest/va-med-meghan-paxil",
               "display": "Paxil 10 MG Oral Tablet"
-            }
-          },
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
-                "valueString": "Take once daily in the morning"
-              }
-            ],
-            "reference": {
-              "reference": "MedicationRequest/va-med-meghan-aptiom",
-              "display": "Aptiom 800 MG Oral Tablet"
             }
           },
           {
@@ -372,85 +389,6 @@
                   "boundsPeriod": {
                     "start": "2016-11-30",
                     "end": "2017-12-31"
-                  },
-                  "frequency": 1,
-                  "period": 7,
-                  "periodUnit": "d"
-                }
-              }
-            }
-          },
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
-                "valueString": "Measured at natural waist"
-              }
-            ],
-            "detail": {
-              "category": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/care-plan-activity-category",
-                    "code": "observation",
-                    "display": "Observation"
-                  }
-                ],
-                "text": "Observation"
-              },
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://loinc.org",
-                    "code": "8280-0",
-                    "display": "Waist Circumference"
-                  }
-                ],
-                "text": "Waist Circumference"
-              },
-              "description": "Use a tape measure at your natural waist, midway between hips and lower rib.",
-              "status": "in-progress",
-              "scheduledTiming": {
-                "repeat": {
-                  "boundsPeriod": {
-                    "start": "2017-08-01",
-                    "end": "2018-12-31"
-                  },
-                  "frequency": 1,
-                  "period": 7,
-                  "periodUnit": "d"
-                }
-              }
-            }
-          },
-          {
-            "detail": {
-              "category": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/care-plan-activity-category",
-                    "code": "observation",
-                    "display": "Observation"
-                  }
-                ],
-                "text": "Observation"
-              },
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://loinc.org",
-                    "code": "39156-5",
-                    "display": "Body mass index (BMI)"
-                  }
-                ]
-              },
-              "description": "Use output from weight scale provided by your doctor",
-              "status": "in-progress",
-              "scheduledTiming": {
-                "repeat": {
-                  "boundsPeriod": {
-                    "start": "2017-08-01",
-                    "end": "2018-12-31"
                   },
                   "frequency": 1,
                   "period": 7,
@@ -527,7 +465,7 @@
                     "display": "Mood"
                   }
                 ],
-                "text": "Mood"
+                "text": "Distress level"
               },
               "description": "Distress includes everything negative you are feeling",
               "status": "in-progress",
@@ -614,6 +552,11 @@
         "status": "active",
         "intent": "plan",
         "title": "Prenatal Care Plan",
+        "description": "Plan includes schedule for routine antenatal visits, plus additional assessments for Meghan's teratogenic medications and chronic depression.",
+        "period": {
+          "start": "2017-09-15",
+          "end": "2018-06-30"
+        },
         "goal": [
           {
             "reference": "Goal/va-goal-meghan-seizure",
@@ -679,7 +622,14 @@
                 "text": "Procedure"
               },
               "code": {
-                "text": "Exercise"
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "226029000",
+                    "display": "Exercises"
+                  }
+                ],
+                "text": "Exercise 30 minutes per day"
               },
               "description": "Walk daily at a comfortable pace for as long as you are able. Stop if you develop shortness of breath, chest pain, or palpatations.",
               "status": "in-progress",
@@ -722,7 +672,7 @@
                     "display": "Number of steps in 24 hour Measured"
                   }
                 ],
-                "text": "Steps"
+                "text": "Number of steps in 24 hours"
               },
               "description": "Record your daily total step count before going to bed each evening.",
               "status": "in-progress",

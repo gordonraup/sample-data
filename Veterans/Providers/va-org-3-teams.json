@@ -120,22 +120,6 @@
               "reference": "Practitioner/va-prac-visn6-francis",
               "display": "Dr. Francis"
             }
-          },
-          {
-            "role": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "224535009",
-                  "display": "Registered nurse"
-                }
-              ],
-              "text": "Registered Nurse (RN)"
-            },
-            "member": {
-              "reference": "Practitioner/va-prac-visn6-pamela",
-              "display": "Pamela, RN"
-            }
           }
         ]
       }

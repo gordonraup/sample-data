@@ -1,0 +1,54 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "AllergyIntolerance/va-allergy-meghan-dairy"
+      },
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "va-allergy-meghan-dairy",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"
+          ]
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
+                "code": "food"
+              }
+            ],
+            "text": "Food"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "226760005",
+              "display": "Dairy foods (substance)"
+            }
+          ],
+          "text": "Dairy"
+        },
+        "patient": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "onsetDateTime": "2015",
+        "note": [
+          {
+            "text": "The severity is moderate becasue of the observed intestinal cramping."
+          }
+        ]
+      }
+    }
+  ]
+}

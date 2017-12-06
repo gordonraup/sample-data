@@ -5,6 +5,61 @@
     {
       "request": {
         "method": "PUT",
+        "url": "RelatedPerson/va-pat-meghan-related-husband"
+      },
+      "resource": {
+        "resourceType": "RelatedPerson",
+        "id": "va-pat-meghan-related-husband",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>RelatedPerson Husband</div></div>"
+        },
+        "patient": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "relationship": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/RoleCode",
+              "code": "HUSB",
+              "display": "husband"
+            }
+          ],
+          "text": "Husband"
+        },
+        "name": [
+          {
+            "use": "usual",
+            "family": "Anderson",
+            "given": [
+              "Chris"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "555-1212",
+            "use": "mobile"
+          },
+          {
+            "system": "email",
+            "value": "chris.anderson@woohoo.com",
+            "use": "home"
+          }
+        ],
+        "gender": "male"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
         "url": "Patient/va-pat-meghan"
       },
       "resource": {
@@ -61,7 +116,7 @@
           {
             "use": "official",
             "text": "Meghan",
-            "family": "Anonymous",
+            "family": "Anderson",
             "given": [
               "Meghan"
             ]

@@ -265,7 +265,7 @@
                     "display": "Exercises"
                   }
                 ],
-                "text": "Exercise"
+                "text": "Exercise 30 minutes per day"
               },
               "description": "Walk daily at a comfortable pace for as long as you are able. Stop if you develop shortness of breath, chest pain, or palpatations.",
               "status": "in-progress",
@@ -467,7 +467,7 @@
                     "display": "Mood"
                   }
                 ],
-                "text": "Mood"
+                "text": "Distress level"
               },
               "description": "Distress includes everything negative you are feeling",
               "status": "in-progress",

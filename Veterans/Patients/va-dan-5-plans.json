@@ -369,7 +369,7 @@
                     "display": "Exercises"
                   }
                 ],
-                "text": "Exercise"
+                "text": "Exercise 30 minutes per day"
               },
               "description": "Walk daily at a comfortable pace for as long as you are able. Stop if you develop shortness of breath, chest pain, or palpatations.",
               "status": "in-progress",
@@ -412,7 +412,7 @@
                     "display": "Number of steps in 24 hour Measured"
                   }
                 ],
-                "text": "Steps"
+                "text": "Number of steps in 24 hours"
               },
               "description": "Record your daily total step count before going to bed each evening.",
               "status": "in-progress",
