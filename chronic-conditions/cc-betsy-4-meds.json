@@ -1,0 +1,161 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/cc-med-betsy-metformin"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "cc-med-betsy-metformin",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>MedicationRequest: Metformin hydrochloride 500 MG Oral Tablet</div></div>"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "860974",
+              "display": "Metformin hydrochloride 500 MG Oral Tablet"
+            }
+          ],
+          "text": "Metformin 500 MG Oral Tablet"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "authoredOn": "2017-08-01",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        },
+        "reasonReference": {
+          "reference": "Condition/cc-cond-betsy-diabetes"
+        },
+        "dosageInstruction": [
+          {
+            "text": "Take metformin 500mg tablets twice a day to control high blood sugar, one with breakfast and the second with dinner. Metformin works by helping to restore your body's proper response to the insulin you naturally produce. It also decreases the amount of sugar that your liver makes and that your stomach/intestines absorb.",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2017-08-01",
+                  "end": "2018-06-30"
+                },
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "Oral route"
+            },
+            "doseQuantity": {
+              "value": 500,
+              "unit": "mg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/cc-med-betsy-vitamin-d"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "cc-med-betsy-vitamin-d",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Vitamin D 1000 UNT orally per day</div></div>"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "316894",
+              "display": "Vitamin D 1000 UNT"
+            }
+          ],
+          "text": "Vitamin D 1000 IU Oral Tablet"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "authoredOn": "2017-12-01",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        },
+        "reasonReference": {
+          "reference": "Condition/cc-cond-betsy-ckd"
+        },
+        "note": [
+          {
+            "text": "When kidneys fail, their ability to activate vitamin D is lost. Without the activated vitamin D to control calcium and phosphorus levels in the blood, parathyroid hormone (PTH) will try to overcompensate and go out of range."
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "text": "By mouth once daily in the morning.",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2017-01-15",
+                  "end": "2018-01-15"
+                },
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "Oral route"
+            },
+            "doseQuantity": {
+              "value": 1000,
+              "unit": "IU"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

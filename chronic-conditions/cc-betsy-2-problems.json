@@ -1,0 +1,208 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/cc-cond-betsy-diabetes"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cc-cond-betsy-diabetes",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
+                "code": "problem"
+              }
+            ],
+            "text": "Problem"
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "6736007",
+              "display": "Moderate"
+            }
+          ],
+          "text": "Moderate"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "44054006",
+              "display": "Type 2 diabetes mellitus"
+            }
+          ],
+          "text": "Type 2 diabetes"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "onsetDateTime": "1997-06-17"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/cc-cond-betsy-chf"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cc-cond-betsy-chf",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
+                "code": "problem"
+              }
+            ],
+            "text": "Problem"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "42343007",
+              "display": "Congestive heart failure (disorder)"
+            }
+          ],
+          "text": "Congestive heart failure"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "onsetDateTime": "2015-10-02"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/cc-cond-betsy-ckd"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cc-cond-betsy-ckd",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
+                "code": "problem"
+              }
+            ],
+            "text": "Problem"
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "6736007",
+              "display": "Moderate"
+            }
+          ],
+          "text": "Moderate"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "709044004",
+              "display": "Chronic kidney disease (disorder)"
+            }
+          ],
+          "text": "Chronic kidney disease"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "onsetDateTime": "2007-11-30"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/cc-cond-betsy-retinopathy"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cc-cond-betsy-retinopathy",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
+                "code": "problem"
+              }
+            ],
+            "text": "Problem"
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "255604002",
+              "display": "Mild"
+            }
+          ],
+          "text": "Mild"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "44054006",
+              "display": "Diabetic retinopathy (disorder)"
+            }
+          ],
+          "text": "Diabetic retinopathy"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "onsetDateTime": "2012-03-07"
+      }
+    }
+  ]
+}
